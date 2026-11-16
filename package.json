@@ -8,7 +8,7 @@
     "dev": "nuxt --hostname 0.0.0.0",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .eslintignore .",
     "contributors:add": "all-contributors add",
@@ -86,5 +86,5 @@
   "pre-commit": [
     "lint"
   ],
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22"
 }
